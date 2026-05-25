@@ -9,6 +9,7 @@ public class PcRequest
     public string Name { get; set; } = null!;
 
     [Required]
+    [Range(0.01, double.MaxValue)]
     public double Weight { get; set; }
 
     [Required]
